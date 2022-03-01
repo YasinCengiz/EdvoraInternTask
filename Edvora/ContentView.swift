@@ -8,10 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var rideModel = [RideModel]()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List {
+            
+        }
+        .task {
+            await loadData()
+        }
     }
+    
+    func loadData() async {
+        
+    }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
