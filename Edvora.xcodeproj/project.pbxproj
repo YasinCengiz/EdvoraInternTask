@@ -12,7 +12,18 @@
 		84D0963C27CE07F000FD7038 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D0963B27CE07F000FD7038 /* Assets.xcassets */; };
 		84D0963F27CE07F000FD7038 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D0963E27CE07F000FD7038 /* Preview Assets.xcassets */; };
 		84D0964627CE08B900FD7038 /* RideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0964527CE08B900FD7038 /* RideModel.swift */; };
+		84D0964E27CE146900FD7038 /* EdvoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0964D27CE146900FD7038 /* EdvoraTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84D0964F27CE146900FD7038 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84D0962C27CE07EE00FD7038 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84D0963327CE07EE00FD7038;
+			remoteInfo = Edvora;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		84D0963427CE07EE00FD7038 /* Edvora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edvora.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,10 +32,19 @@
 		84D0963B27CE07F000FD7038 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D0963E27CE07F000FD7038 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		84D0964527CE08B900FD7038 /* RideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RideModel.swift; sourceTree = "<group>"; };
+		84D0964B27CE146900FD7038 /* EdvoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EdvoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84D0964D27CE146900FD7038 /* EdvoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdvoraTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		84D0963127CE07EE00FD7038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D0964827CE146900FD7038 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				84D0963627CE07EE00FD7038 /* Edvora */,
+				84D0964C27CE146900FD7038 /* EdvoraTests */,
 				84D0963527CE07EE00FD7038 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				84D0963427CE07EE00FD7038 /* Edvora.app */,
+				84D0964B27CE146900FD7038 /* EdvoraTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +92,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		84D0964C27CE146900FD7038 /* EdvoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				84D0964D27CE146900FD7038 /* EdvoraTests.swift */,
+			);
+			path = EdvoraTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -90,6 +120,24 @@
 			productReference = 84D0963427CE07EE00FD7038 /* Edvora.app */;
 			productType = "com.apple.product-type.application";
 		};
+		84D0964A27CE146900FD7038 /* EdvoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84D0965127CE146900FD7038 /* Build configuration list for PBXNativeTarget "EdvoraTests" */;
+			buildPhases = (
+				84D0964727CE146900FD7038 /* Sources */,
+				84D0964827CE146900FD7038 /* Frameworks */,
+				84D0964927CE146900FD7038 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84D0965027CE146900FD7038 /* PBXTargetDependency */,
+			);
+			name = EdvoraTests;
+			productName = EdvoraTests;
+			productReference = 84D0964B27CE146900FD7038 /* EdvoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +150,10 @@
 				TargetAttributes = {
 					84D0963327CE07EE00FD7038 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					84D0964A27CE146900FD7038 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 84D0963327CE07EE00FD7038;
 					};
 				};
 			};
@@ -119,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				84D0963327CE07EE00FD7038 /* Edvora */,
+				84D0964A27CE146900FD7038 /* EdvoraTests */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +183,13 @@
 			files = (
 				84D0963F27CE07F000FD7038 /* Preview Assets.xcassets in Resources */,
 				84D0963C27CE07F000FD7038 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84D0964927CE146900FD7038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +206,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		84D0964727CE146900FD7038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84D0964E27CE146900FD7038 /* EdvoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84D0965027CE146900FD7038 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84D0963327CE07EE00FD7038 /* Edvora */;
+			targetProxy = 84D0964F27CE146900FD7038 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		84D0964027CE07F000FD7038 /* Debug */ = {
@@ -323,6 +399,42 @@
 			};
 			name = Release;
 		};
+		84D0965227CE146900FD7038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VRT2RAXRCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasin.EdvoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Edvora.app/Edvora";
+			};
+			name = Debug;
+		};
+		84D0965327CE146900FD7038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VRT2RAXRCV;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yasin.EdvoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Edvora.app/Edvora";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +452,15 @@
 			buildConfigurations = (
 				84D0964327CE07F000FD7038 /* Debug */,
 				84D0964427CE07F000FD7038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84D0965127CE146900FD7038 /* Build configuration list for PBXNativeTarget "EdvoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84D0965227CE146900FD7038 /* Debug */,
+				84D0965327CE146900FD7038 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

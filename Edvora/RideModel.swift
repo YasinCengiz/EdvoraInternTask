@@ -9,18 +9,15 @@ import Foundation
 
 struct RideModel: Codable {
     
-    let id: UUID
-    let originStationCode: Int
-    let stationPath: [Int]
-    let date: Date
-    let mapURL: URL
+    let id: Int
+    let origin_station_code: Int
+    let station_path: [Int]
+    let destination_station_code: Int
+    let date: String
+    let map_url: String
     let state: String
     let city: String
     
 }
 
-struct Response: Codable {
-    
-    var response: [RideModel]
-    
-}
+
