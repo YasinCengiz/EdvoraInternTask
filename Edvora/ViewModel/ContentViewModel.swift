@@ -11,7 +11,8 @@ import Foundation
 class ContentViewModel: ObservableObject {
     
     @Published var rideModel = [RideModel]()
-    
+    @Published var userModel: UserModel?
+
     private let network: NetworkType
     
     init(network: NetworkType = Network()) {
@@ -27,4 +28,16 @@ class ContentViewModel: ObservableObject {
             rideModel = model
         }
     }
+    
+    
+    func loadUser() async {
+        guard let userUrl = URL(string: "https://assessment.api.vweb.app/user") else {
+            print("URL ERROR: INVALID URL")
+            return
+        }
+        await network.request(url: userUrl, completionHandler: { (model: UserModel) in
+            userModel = model
+        })
+    }
+    
 }

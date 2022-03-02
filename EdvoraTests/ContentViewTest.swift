@@ -20,19 +20,33 @@ class EdvoraTests: XCTestCase {
     }
 
     func testLoadData() async throws {
-        let viewModel = ContentViewModel(network: MockNetwork())
+        let viewModel = ContentViewModel(network: MockNetwork(json))
         await viewModel.loadData()
         XCTAssert(viewModel.rideModel.count == 3)
     }
+    
+    func testUserData() async throws {
+        let viewModel = ContentViewModel(network: MockNetwork(userJSON))
+        await viewModel.loadUser()
+        XCTAssertNotNil(viewModel.userModel)
+    }
+    
 }
 
 private class MockNetwork: NetworkType {
+    
+    private let json: String
     func request<Data>(url: URL, completionHandler: (Data) -> Void) async where Data : Decodable, Data : Encodable {
         let data = json.data(using: .utf8)!
         if let decodedResponse = try? JSONDecoder().decode(Data.self, from: data) {
             completionHandler(decodedResponse)
         }
     }
+    
+    init(_ json: String) {
+        self.json = json
+    }
+    
 }
 
 // HARDCODED MOCK SHORTCUT
@@ -85,3 +99,12 @@ private let json = """
   }
 ]
 """
+
+private let userJSON = """
+{
+"station_code":11,
+"name":"Aladdin Jennings",
+"url":"https://picsum.photos/200"
+}
+"""
+

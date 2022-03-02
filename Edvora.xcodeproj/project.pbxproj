@@ -16,6 +16,8 @@
 		84D0965727CE1F0200FD7038 /* Nearest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0965627CE1F0200FD7038 /* Nearest.swift */; };
 		84D0965927CE209000FD7038 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0965827CE209000FD7038 /* ContentViewModel.swift */; };
 		84D0965C27CE240E00FD7038 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0965B27CE240E00FD7038 /* Network.swift */; };
+		84D0965E27CF4CF900FD7038 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0965D27CF4CF900FD7038 /* UserModel.swift */; };
+		84D0966027CF4D9C00FD7038 /* UserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D0965F27CF4D9C00FD7038 /* UserModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		84D0965627CE1F0200FD7038 /* Nearest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nearest.swift; sourceTree = "<group>"; };
 		84D0965827CE209000FD7038 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		84D0965B27CE240E00FD7038 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		84D0965D27CF4CF900FD7038 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		84D0965F27CF4D9C00FD7038 /* UserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				84D0964D27CE146900FD7038 /* ContentViewTest.swift */,
+				84D0965F27CF4D9C00FD7038 /* UserModelTest.swift */,
 			);
 			path = EdvoraTests;
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				84D0964527CE08B900FD7038 /* RideModel.swift */,
+				84D0965D27CF4CF900FD7038 /* UserModel.swift */,
 				84D0965B27CE240E00FD7038 /* Network.swift */,
 			);
 			path = Model;
@@ -239,6 +245,7 @@
 				84D0963827CE07EF00FD7038 /* EdvoraApp.swift in Sources */,
 				84D0965727CE1F0200FD7038 /* Nearest.swift in Sources */,
 				84D0964627CE08B900FD7038 /* RideModel.swift in Sources */,
+				84D0965E27CF4CF900FD7038 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D0966027CF4D9C00FD7038 /* UserModelTest.swift in Sources */,
 				84D0964E27CE146900FD7038 /* ContentViewTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -393,6 +401,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -422,6 +431,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
